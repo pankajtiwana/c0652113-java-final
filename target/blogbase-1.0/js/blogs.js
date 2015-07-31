@@ -45,7 +45,7 @@ $(document).ready(function () {
 
         },
         error: function (jqxhr, status, errorMsg) {
-            window.location.replace("http://blogbase-c0652113.rhcloud.com/");
+            //window.location.replace("http://blogsmaster-c0652113.rhcloud.com/");
            // alert('Failed! ' + errorMsg);
         }
     });
