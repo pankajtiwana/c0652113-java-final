@@ -177,7 +177,7 @@ $(document).ready(function () {
 
 
     getMessages();
-    setInterval(getMessages, 1000);
+    setInterval(getMessages, 3000);
 });
 
            

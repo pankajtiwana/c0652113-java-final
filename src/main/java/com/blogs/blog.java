@@ -194,7 +194,7 @@ public class blog {
         try {
             con = DatabaseConnection.getConnection();
 
-            String query = "SELECT blog.blog_id,blog_text,blog_date,blog.username, image FROM blog LEFT OUTER JOIN images ON blog.username=images.username";
+            String query = "SELECT blog.blog_id,blog_text,blog_date,blog.username, image FROM blog LEFT OUTER JOIN IMAGES ON blog.username=IMAGES.username";
 
                // String query="SELECT count(blog.blog_id),blog.blog_id,blog_text,blog_date,blog.username, image, comment_id,comment_text,comment_date,comments.username FROM blog INNER JOIN images ON blog.username=images.username";
             smt = con.createStatement();
