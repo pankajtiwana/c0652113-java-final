@@ -111,15 +111,17 @@ $(document).ready(function () {
 
 
     $("#post").click(function () {
+       
+     
 
         var xmlhttp = new XMLHttpRequest();
         xmlhttp.open("POST", "AshychronousPolling?t=" + new Date(), false);
         var post = escape(document.getElementById("blogarea").value);
         xmlhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-        // var nameText = escape(document.getElementById("name").value);
+           //var nameText = escape(document.getElementById("name").value);
         //var messageText = escape(document.getElementById("message").value);
         //document.getElementById("message").value = "";
-        xmlhttp.send("blog=" + post);
+              xmlhttp.send("blog=" + post);
 
         el = document.getElementById("blog");
         e2 = document.getElementById("opac");

@@ -20,7 +20,7 @@ public class DatabaseConnection {
             Class.forName("com.mysql.jdbc.Driver").newInstance();
             String jdbc = "jdbc:mysql://127.5.97.2:3306/blogsmaster";
             String user = "adminvDIHxM1";
-            String pass = "htrJG_ET-vb1";
+            String pass = "";
             conn = DriverManager.getConnection(jdbc, user, pass);
             //String query = "SELECT * FROM product";
 
