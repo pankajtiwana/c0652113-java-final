@@ -430,7 +430,7 @@ function getComments(blogid)
                    
                }, 
                error: function (jqxhr, status, errorMsg) {
-            alert('Failed! ' + errorMsg);
+            //alert('Failed! ' + errorMsg);
         }
                 
             });
