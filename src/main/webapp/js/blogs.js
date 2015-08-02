@@ -394,14 +394,14 @@ bringPost(upperlimit,lowerlimit);
 
 function getComments(blogid)
 {
-    $("#loading").css("display", "block");
+    $("#cload").css("display", "block");
            $.ajax({
                url:"rs/blog/comments",
                Type: "get",
                data:"blogid="+blogid,
                dataType: 'json',
                success:function(data){
-                   $("#loading").css("display", "none");
+                   $("#cload").css("display", "none");
                    console.log(data);
                     $.each(data, function (index, item) {
                         
