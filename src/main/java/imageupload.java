@@ -156,6 +156,13 @@ InputStream inputStream = null; // input stream of the upload file
             out.printf(rs);
             Logger.getLogger(imageupload.class.getName()).log(Level.SEVERE, null, ex);
         }
+        finally{
+              try {
+                con.close();
+            } catch (SQLException ex) {
+                //Logger.getLogger(blog.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        }
           
        
     }

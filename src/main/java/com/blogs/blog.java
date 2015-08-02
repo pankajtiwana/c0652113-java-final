@@ -171,12 +171,19 @@ public class blog {
 
             array.add(build);
             sendinguserdata = array.build().toString();
-//con.close();
+
 
         } catch (SQLException | ClassNotFoundException | InstantiationException | IllegalAccessException ex7) {
             String msg = ex7.getMessage();
 
             return msg;
+        }
+        finally{
+            try {
+                con.close();
+            } catch (SQLException ex) {
+                Logger.getLogger(blog.class.getName()).log(Level.SEVERE, null, ex);
+            }
         }
 
         return sendinguserdata;
@@ -286,6 +293,13 @@ JsonObjectBuilder builderror = Json.createObjectBuilder()
 
 //Logger.getLogger(blog.class.getName()).log(Level.SEVERE, null, ex);
         }
+        finally{
+              try {
+                con.close();
+            } catch (SQLException ex) {
+                Logger.getLogger(blog.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        }
         String alldata = array1.build().toString();
         return alldata;
     }
@@ -342,6 +356,13 @@ JsonObjectBuilder builderror = Json.createObjectBuilder()
             } catch (SQLException | ClassNotFoundException | InstantiationException | IllegalAccessException ex3) {
                 Logger.getLogger(blog.class.getName()).log(Level.SEVERE, null, ex3);
             }
+            finally{
+                  try {
+                con.close();
+            } catch (SQLException ex) {
+                Logger.getLogger(blog.class.getName()).log(Level.SEVERE, null, ex);
+            }
+            }
         
       return commentarray.build().toString();
  
@@ -397,6 +418,13 @@ JsonObjectBuilder builderror = Json.createObjectBuilder()
                 String msg=ex.getMessage();
                 return msg;
                // Logger.getLogger(blog.class.getName()).log(Level.SEVERE, null, ex);
+            }
+            finally{
+                  try {
+                con.close();
+            } catch (SQLException ex) {
+                Logger.getLogger(blog.class.getName()).log(Level.SEVERE, null, ex);
+            }
             }
        return "done";
     }

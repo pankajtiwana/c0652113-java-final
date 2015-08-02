@@ -110,6 +110,13 @@ con.close();
            out.write("gone");
             Logger.getLogger(UserCredentials.class.getName()).log(Level.SEVERE, null, ex);
         }
+        finally{
+              try {
+                con.close();
+            } catch (SQLException ex) {
+                //Logger.getLogger(blog.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        }
 
     }
 

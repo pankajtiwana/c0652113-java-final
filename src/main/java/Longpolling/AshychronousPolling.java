@@ -189,6 +189,13 @@ for (AsyncContext asyncContext : asyncContexts) {
                 con.close();
             } catch (Exception ex) {
             }
+            finally{
+                  try {
+                con.close();
+            } catch (SQLException ex) {
+               // Logger.getLogger(blog.class.getName()).log(Level.SEVERE, null, ex);
+            }
+            }
         }
 
     }
