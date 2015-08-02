@@ -78,14 +78,14 @@ var limits={upper: up, lower: lo};
         success: function (data) {
             console.log(data.length);
 
-               $("#loading").css("display", "none");
+            $("#loading").css("display", "none");
 
                 previoustask=true;
             $.each(data, function (index, item) {
    if(item.errorcode==="nodatafound")
 {
     $("#nodata").fadeIn();
-                   $("#loading").css("display", "none");
+                $("#loading").css("display", "none");
 
     //alert("no data found");
 }
@@ -401,7 +401,9 @@ function getComments(blogid)
                data:"blogid="+blogid,
                dataType: 'json',
                success:function(data){
-                   $("#cload").css("display", "none");
+                  
+                   
+                 $("#cload").css("display", "none");
                    console.log(data);
                     $.each(data, function (index, item) {
                         

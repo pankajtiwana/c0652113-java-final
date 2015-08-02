@@ -165,17 +165,25 @@ bottom: 0;
 }
 #loading
 {
-    background-image: url(../images/loading.gif);
-    display: none;
-    opacity:0.1;
+   // background-image: url(../images/pattern.png);
+   // display: none;
+    opacity:0.9;
     //background-color:#000000;
     position:relative;
     width:50%;
     height:50px;
     bottom:0px;
     margin: 0 auto;
-    
+    //border: 2px solid black;
     z-index:1000; 
+    text-align: center;    
+display: table-cell;
+vertical-align: middle;
+}
+#loading img{
+    margin: 0 auto;
+    height: 100px;
+    width: 100px;
 }
 #nodata{
     border: 2px solid black;
@@ -205,15 +213,21 @@ bottom: 0;
     float: left;
 }
 #cload{
-     background-image: url(../images/loading.gif);
-    display: none;
-    opacity:0.1;
+     //background-image: url(../images/loading.gif);
+    //display: none;
+    opacity:0.9;
     //background-color:#000000;
     position:relative;
     width:50%;
     height:50px;
     bottom:0px;
     margin: 0 auto;
-    
+     text-align: center;    
+display: table-cell;
+vertical-align: middle;
     z-index:1000; 
+}
+#cload img{
+    height: 50px;
+    width: 50px;
 }
