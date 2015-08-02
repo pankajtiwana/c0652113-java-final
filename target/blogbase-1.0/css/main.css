@@ -96,13 +96,124 @@ img
 }
 .blogs{
     //border: 1px solid blue;
-    margin-left: 7em;
-    height:300px;
+   // margin-left: 7em;
+    min-height:100px;
+    margin-top: 2em;
     //float: right;
 }
 .photos{
    // border: 1px solid green;
     width: 100px;
-    height: 200px;
+    height: 50px;
     float:left;
+}
+#mainblog img{
+    height: 50px;
+    width: 50px;
+    
+}
+#photo img{
+    height: 100px;
+    width: 100px;
+}
+
+.name{
+    border: 2px solid black;
+    margin-left: 4em;
+   // margin-top: 2em;
+}
+#commentarea{
+    display: none;
+     //overflow-y: scroll;
+     position: absolute;
+     opacity:0.8;
+    background-color:#ccc;
+     left: 0px;
+     top: 0px;
+     width:400px;
+     min-height:200px;
+     text-align:center;
+     z-index: 1000;
+     box-shadow: 10px 10px 5px #888888;
+     word-wrap:break-word;
+
+    // border: 5px solid black;
+}
+#inner{
+         display: block;
+
+      opacity:0.8;
+    background-color:#ccc;
+    position: absolute;
+     width:400px;
+    // margin: 100px auto;
+     //background-color: #fff;
+     //border:.5px solid #000;
+     
+     text-align:center;
+     //height: 60px;
+          z-index: 1001;
+bottom: 0;
+     //margin-bottom: 6em;
+     
+}
+
+#usimg img{
+    height: 20px;
+    width: 20px;
+    float: left;
+}
+#loading
+{
+    background-image: url(../images/loading.gif);
+    display: none;
+    opacity:0.1;
+    //background-color:#000000;
+    position:relative;
+    width:50%;
+    height:50px;
+    bottom:0px;
+    margin: 0 auto;
+    
+    z-index:1000; 
+}
+#nodata{
+    border: 2px solid black;
+     display: none;
+     text-align: center;
+    opacity:0.1;
+    //background-color:#000000;
+    position:relative;
+    width:50%;
+    height:50px;
+    bottom:0px;
+    margin: 0 auto;
+    
+    z-index:1000;  
+}
+#commentarea img{
+    
+}
+#inner input[type=text]
+{
+    width:380px;
+}
+.Cname{
+    float:left;
+}
+#statcomname{
+    float: left;
+}
+#cload{
+     background-image: url(../images/loading.gif);
+    display: none;
+    opacity:0.1;
+    //background-color:#000000;
+    position:relative;
+    width:50%;
+    height:50px;
+    bottom:0px;
+    margin: 0 auto;
+    
+    z-index:1000; 
 }

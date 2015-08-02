@@ -92,7 +92,7 @@ int blogid;
     
         
         final AsyncContext ashync=request.startAsync(request, response);
-        ashync.setTimeout(3000);
+        ashync.setTimeout(2000);
         contexts.add(ashync);
        // PrintWriter out=response.getWriter();
        // out.write("adding");
